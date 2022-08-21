@@ -18,7 +18,7 @@
                     <children>
                         <TextField fx:id="searchTextField" onAction="#searchTextFieldSubmitted" prefHeight="25.0" prefWidth="395.0" promptText="Movie Title" />
                         <Button mnemonicParsing="false" onAction="#searchButtonClicked" text="Search" />
-                  <Button mnemonicParsing="false" text="GoToDetails" />
+                  <Button fx:id="gotodetailsbutton" mnemonicParsing="false" onAction="#gotodetails" text="GoToDetails" />
                     </children>
                     <opaqueInsets>
                         <Insets />

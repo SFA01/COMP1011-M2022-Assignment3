@@ -3,12 +3,14 @@ package ca.georgiancollege.comp1011m2022assignment3;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -26,6 +28,16 @@ public class SearchViewController implements Initializable
 
     @FXML
     private TextField searchTextField;
+
+    @FXML
+    private Button gotodetailsbutton;
+
+
+    @FXML
+    void gotodetails(ActionEvent event) throws IOException {
+
+        SceneManager.Instance().changeScene(event, "details-view.fxml");
+    }
 
     @FXML
     void searchButtonClicked(ActionEvent event)
@@ -67,4 +79,5 @@ public class SearchViewController implements Initializable
             }
         });
     }
+
 }
