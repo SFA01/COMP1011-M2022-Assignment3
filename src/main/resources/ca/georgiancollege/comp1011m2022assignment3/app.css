@@ -20,3 +20,15 @@
     -fx-border-style: solid none none none;
     -fx-border-color: black;
 }
+
+//Here I am styling the button to be pink
+.button
+{
+-fx-background-color: pink;
+}
+
+//Here I am styling the background to be yellow
+.root
+{
+-fx-background: yellow;
+}
